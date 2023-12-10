@@ -1,3 +1,4 @@
+import pytest
 from assertpy import assert_that
 
 from pages.crawler_admin_page import CrawlerAdminPage
@@ -7,10 +8,12 @@ from tests.base_test import BaseTest
 
 class CrawlerTest(BaseTest, CrawlerAdminPage, WpLoginPage):
 
+    @pytest.mark.crawler
     def test_verify_crawler_admin_page(self):
         self.goto_crawler_admin_page()
         self.verify_crawler_page_loads()
 
+    @pytest.mark.crawler
     def test_trigger_manual_crawl(self):
         self.goto_crawler_admin_page()
         self.verify_crawler_page_loads()

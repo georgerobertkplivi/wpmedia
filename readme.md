@@ -31,3 +31,5 @@ Make sure you are in the project directory and your virtual environment is activ
 
 To run the test using pytest, execute the following command:
     pytest -k test_trigger_manual_crawl or pytest -k test_verify_crawler_admin_page
+
+Also run the command pytest -m crawler --dashboard in terminal to run a group of tests called crawler
