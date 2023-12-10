@@ -29,5 +29,5 @@ Run the  Command Below
 ## Running the Test
 Make sure you are in the project directory and your virtual environment is activated.
 
-To run the test_search_thyssenkrupp test using pytest, execute the following command:
+To run the test using pytest, execute the following command:
     pytest -k test_trigger_manual_crawl or pytest -k test_verify_crawler_admin_page
